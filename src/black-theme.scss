@@ -1,0 +1,9 @@
+$mike-black-primary: mat-palette($mat-grey, 700, 300, 900);
+$mike-black-accent: mat-palette($mat-blue-grey, 400);
+$mike-black-warn: mat-palette($mat-red, 500);
+
+$mike-black-theme: mat-dark-theme(
+  $mike-black-primary,
+  $mike-black-accent,
+  $mike-black-warn
+);

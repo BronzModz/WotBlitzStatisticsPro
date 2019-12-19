@@ -10,3 +10,9 @@
 @import 'black-theme.scss';
 
 @include angular-material-theme($mike-black-theme);
+
+body {
+  background-color: #424242;
+  color: #FFF4F6F9;
+
+}

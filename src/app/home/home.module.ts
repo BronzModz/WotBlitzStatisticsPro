@@ -4,6 +4,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { HomeComponent } from './home.component';
 import { MaterialModule } from '../material.module';
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { DialogsService } from './dialogs/dialogs.service';
 
 
 const routes: Routes = [
@@ -17,6 +18,9 @@ const routes: Routes = [
     RouterModule.forChild(routes),
     MaterialModule,
     FlexLayoutModule
+  ],
+  providers: [
+    DialogsService
   ]
 })
 export class HomeModule { }

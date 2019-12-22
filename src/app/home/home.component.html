@@ -12,9 +12,9 @@
       track your game statistics over time.
     </div>
     <div fxLayout="column" fxLayoutAlign="space-around start">
-      <button mat-raised-button><mat-icon>meeting_room</mat-icon> <ng-container i18n>Login with WargamingId</ng-container></button>
-      <button mat-raised-button><mat-icon>search</mat-icon> <ng-container i18n>Search by login</ng-container></button>
-      <button mat-raised-button><mat-icon>youtube_searched_for</mat-icon> <ng-container i18n>Search by clan</ng-container></button>
+      <button mat-raised-button (click)="loginWithWargamingId()" id="loginButton"><mat-icon>meeting_room</mat-icon> <ng-container i18n>Login with WargamingId</ng-container></button>
+      <button mat-raised-button (click)="searchByAccount()" id="searchByAccountButton"><mat-icon>search</mat-icon> <ng-container i18n>Search by login</ng-container></button>
+      <button mat-raised-button (click)="searchByClan()" id ="searchByClanButton"><mat-icon>youtube_searched_for</mat-icon> <ng-container i18n>Search by clan</ng-container></button>
     </div>
     <div fxFlex></div>
   </div>

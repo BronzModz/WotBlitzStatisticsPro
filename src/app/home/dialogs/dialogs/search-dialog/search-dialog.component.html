@@ -1,0 +1,15 @@
+<h2 mat-dialog-title i18n>Search</h2>
+<mat-dialog-content>
+  <form class="search-form">
+    <mat-form-field class="search-full-width">
+      <input matInput placeholder="Account" />
+    </mat-form-field>
+
+  </form>
+</mat-dialog-content>
+<mat-dialog-actions>
+  <button mat-button (click)="select()"><mat-icon>save</mat-icon> Select</button>
+  <button mat-button (click)="dismiss()">
+    <mat-icon>cancel</mat-icon> Cancel
+  </button>
+</mat-dialog-actions>

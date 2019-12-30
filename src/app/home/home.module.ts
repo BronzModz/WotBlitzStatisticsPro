@@ -5,6 +5,7 @@ import { HomeComponent } from './home.component';
 import { MaterialModule } from '../material.module';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { DialogsService } from './dialogs/dialogs.service';
+import { SearchDialogComponent } from './dialogs/dialogs/search-dialog/search-dialog.component';
 
 
 const routes: Routes = [
@@ -12,7 +13,7 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  declarations: [HomeComponent],
+  declarations: [HomeComponent, SearchDialogComponent],
   imports: [
     CommonModule,
     RouterModule.forChild(routes),
@@ -21,6 +22,9 @@ const routes: Routes = [
   ],
   providers: [
     DialogsService
+  ],
+  entryComponents: [
+    SearchDialogComponent
   ]
 })
 export class HomeModule { }

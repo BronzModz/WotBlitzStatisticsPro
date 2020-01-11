@@ -7,7 +7,6 @@ import { RealmType } from '../model/realm-type';
 })
 export class StateService {
 
-  // ToDo: make control in Home component
   private realm = new BehaviorSubject<RealmType>(RealmType.Ru);
   public realm$ = this.realm.asObservable();
 

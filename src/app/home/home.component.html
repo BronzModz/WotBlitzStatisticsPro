@@ -11,6 +11,23 @@
       You can also log in with your Wargaming account. This will allow you to
       track your game statistics over time.
     </div>
+    <div>
+      <ng-container i18n>Select region:</ng-container>
+      <mat-button-toggle-group #group="matButtonToggleGroup" [value]="realm$ | async" (change)="realmChanged($event.value)" id="realmButtonsGroup">
+        <mat-button-toggle value="Eu" i18n-aria-label aria-label="Europe" id="euRealmButton">
+          <img src="../../assets/realms/region.eu.scale-200.png"/>
+        </mat-button-toggle>
+        <mat-button-toggle value="Ru" i18n-aria-label aria-label="Russia" id="ruRealmButton">
+          <img src="../../assets/realms/region.ru.scale-200.png"/>
+        </mat-button-toggle>
+        <mat-button-toggle value="NA" i18n-aria-label aria-label="North America" id="naRealmButton">
+          <img src="../../assets/realms/region.na.scale-200.png"/>
+        </mat-button-toggle>
+        <mat-button-toggle value="Asia" i18n-aria-label aria-label="Asia" id="asiaRealmButton">
+          <img src="../../assets/realms/region.asia.scale-200.png"/>
+        </mat-button-toggle>
+      </mat-button-toggle-group>
+    </div>
     <div fxLayout="column" fxLayoutAlign="space-around start">
       <button mat-raised-button (click)="loginWithWargamingId()" id="loginButton"><mat-icon>meeting_room</mat-icon> <ng-container i18n>Login with WargamingId</ng-container></button>
       <button mat-raised-button (click)="searchByAccount()" id="searchByAccountButton"><mat-icon>search</mat-icon> <ng-container i18n>Search by login</ng-container></button>

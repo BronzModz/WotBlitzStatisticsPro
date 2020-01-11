@@ -1,6 +1,6 @@
 export enum RealmType {
-  Ru,
-  Eu,
-  NA,
-  Asia
+  Ru = 'Ru',
+  Eu = 'Eu',
+  NA = 'NA',
+  Asia = 'Asia'
 }

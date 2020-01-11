@@ -11,10 +11,12 @@ import { SearchCondition } from '../../model/search-condition';
 export class SearchDialogComponent implements OnInit {
 
   public searchCondition: SearchCondition;
+  public searchPlaceholder: string;
 
   constructor(private dialogRef: MatDialogRef<SearchDialogComponent>,
               @Optional() @Inject(MAT_DIALOG_DATA) data: SearchCondition  ) {
     this.searchCondition = data;
+    this.searchPlaceholder = this.searchCondition.searchType === SearchType.byAccount ? 'Account' : 'Clan';
     console.log(this.searchCondition);
   }
 

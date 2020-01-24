@@ -1,25 +1,44 @@
-import { Injectable } from '@angular/core';
+import { Injectable, OnDestroy } from '@angular/core';
 import { MatDialog } from '@angular/material';
 import { SearchDialogComponent } from './dialogs/search-dialog/search-dialog.component';
 import { SearchType } from './model/search-type';
-import { RealmType } from 'src/app/model/realm-type';
+import { RealmType } from '../../model/realm-type';
+import { SearchDialogResult } from './model/search-dialog-result';
+import { StateService } from '../../state/state.service';
 
 @Injectable()
 export class DialogsService {
 
-  constructor(private dialog: MatDialog) { }
+  constructor(private dialog: MatDialog,
+              private state: StateService) { }
 
   public searchByAccount() {
     const dialogRef = this.dialog.open(SearchDialogComponent, {
       width: '450px',
-      data:  { searchType: SearchType.byAccount, realmType: RealmType.Ru }
+      data:  { searchType: SearchType.byAccount }
     });
+
+    dialogRef.afterClosed()
+      .subscribe((result: SearchDialogResult) => {
+        console.log(result);
+        if (result) {
+          this.state.OpenAccountInfoEvent(result.selectedId);
+        }
+      });
   }
 
   public searchByClan() {
     const dialogRef = this.dialog.open(SearchDialogComponent, {
       width: '450px',
-      data: { searchType: SearchType.byClan, realmType: RealmType.Ru }
+      data: { searchType: SearchType.byClan }
+    });
+
+    dialogRef.afterClosed()
+    .subscribe((result: SearchDialogResult) => {
+      console.log(result);
+      if (result) {
+        this.state.OpenClanInfoEvent(result.selectedId);
+      }
     });
   }
 

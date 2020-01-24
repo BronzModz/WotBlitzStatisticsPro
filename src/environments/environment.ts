@@ -3,7 +3,8 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  wargamingAppId: 'e6bb7a6cd1b7da3ca5697f97072d2176' // BLITZSTATICIANSTAGE
 };
 
 /*

@@ -4,7 +4,6 @@ import { DialogsService } from './dialogs.service';
 import { MatDialog } from '@angular/material';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 
-
 describe('DialogsService', () => {
   let mockMatDialog: MatDialog;
 
@@ -24,4 +23,5 @@ describe('DialogsService', () => {
     const service: DialogsService = TestBed.get(DialogsService);
     expect(service).toBeTruthy();
   });
+
 });

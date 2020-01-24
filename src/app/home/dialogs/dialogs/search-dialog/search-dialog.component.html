@@ -1,15 +1,31 @@
 <h2 mat-dialog-title i18n>Search</h2>
 <mat-dialog-content>
   <form class="search-form">
+    <div *ngIf="searchCondition.searchType === 'byAccount'" i18n>
+      Type at least {{ accountsSearchMinSymbolsCount }} characters of player's nick
+    </div>
     <mat-form-field class="search-full-width">
-      <input matInput [placeholder]="searchPlaceholder" />
+      <input matInput [placeholder]="searchPlaceholder" #searchInput />
     </mat-form-field>
-
+    <div *ngIf="searchCondition.searchType === 'byAccount'">
+      <mat-action-list id="playersList">
+        <button *ngFor="let account of  accountsList$ | async" mat-list-item (click)="itemClicked(account.account_id)"> {{account.nickname}} </button>
+      </mat-action-list>
+    </div>
+    <div *ngIf="searchCondition.searchType === 'byClan'">
+      <mat-action-list id="clansList">
+        <button *ngFor="let clan of clansList$ | async" mat-list-item (click)="itemClicked(clan.clan_id)">
+          [{{clan.tag}}] {{clan.name}} ({{clan.members_count}} <ng-container i18n>members</ng-container>)
+        </button>
+      </mat-action-list>
+    </div>
+    <div *ngIf="error$ | async as error" color="warning">
+      {{error}}
+    </div>
   </form>
 </mat-dialog-content>
 <mat-dialog-actions>
-  <button mat-button (click)="select()"><mat-icon>save</mat-icon> Select</button>
   <button mat-button (click)="dismiss()">
-    <mat-icon>cancel</mat-icon> Cancel
+    <mat-icon>cancel</mat-icon> <ng-container i18n>Cancel</ng-container>
   </button>
 </mat-dialog-actions>

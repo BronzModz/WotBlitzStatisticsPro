@@ -20,7 +20,6 @@ export class DialogsService {
 
     dialogRef.afterClosed()
       .subscribe((result: SearchDialogResult) => {
-        console.log(result);
         if (result) {
           this.state.OpenAccountInfoEvent(result.selectedId);
         }
@@ -35,7 +34,6 @@ export class DialogsService {
 
     dialogRef.afterClosed()
     .subscribe((result: SearchDialogResult) => {
-      console.log(result);
       if (result) {
         this.state.OpenClanInfoEvent(result.selectedId);
       }

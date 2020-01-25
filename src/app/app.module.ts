@@ -7,10 +7,12 @@ import { AppComponent } from './app.component';
 import { MaterialModule } from './material.module';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { HttpClientModule } from '@angular/common/http';
+import { NavBarComponent } from './nav-bar/nav-bar.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    NavBarComponent
   ],
   imports: [
     BrowserModule,

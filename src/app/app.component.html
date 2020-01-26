@@ -2,7 +2,7 @@
 <router-outlet></router-outlet>
 <mat-toolbar color="primary">
   <mat-icon>language</mat-icon>
-  <mat-select class="language-selector" value="en">
+  <mat-select class="language-selector" [(value)]="selectedLocale">
     <mat-option value="en">En</mat-option>
     <mat-option value="ru">Ru</mat-option>
     <mat-option value="de">De</mat-option>

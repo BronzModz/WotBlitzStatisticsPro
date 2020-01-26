@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="en" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="7e892ba15f2c6c17e83510e273b3e10fc32ea016" datatype="html">
+        <source>Search</source>
+        <target>Suche</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/dialogs/dialogs/search-dialog/search-dialog.component.html</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="fdad8f36b54d2186393e0014d2bb3e27d8c7aa93" datatype="html">
+        <source>
+      Type at least <x id="INTERPOLATION" equiv-text="{{ accountsSearchMinSymbolsCount }}"/> characters of player&apos;s nick
+    </source>
+        <target>
+      Type at least <x id="INTERPOLATION" equiv-text="{{ accountsSearchMinSymbolsCount }}"/> characters of player&apos;s nick
+    </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/dialogs/dialogs/search-dialog/search-dialog.component.html</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="02f81f1e2e93f39e0b02f02e9f4cad8a9fa9774d" datatype="html">
+        <source>members</source>
+        <target>members</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/dialogs/dialogs/search-dialog/search-dialog.component.html</context>
+          <context context-type="linenumber">18</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="d7b35c384aecd25a516200d6921836374613dfe7" datatype="html">
+        <source>Cancel</source>
+        <target>Abbrechen</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/dialogs/dialogs/search-dialog/search-dialog.component.html</context>
+          <context context-type="linenumber">29</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="d7ffd1631e23048bd1a76ab7f489237a0f3ca658" datatype="html">
+        <source>Welcome to WOT Statatistics Pro</source>
+        <target>Willkommen bei WOT Statatistics Pro</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/home.component.html</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8edf22373341ed09289671f9ba4bde04193e1be7" datatype="html">
+        <source>
+      You can see the statistics of any player using the search by nick (for
+      example, &quot;Swarov5ki&quot;). Or you can search by clan tag (for example, &quot;C4&quot;)
+      <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>
+      You can also log in with your Wargaming account. This will allow you to
+      track your game statistics over time.
+    </source>
+        <target>
+      You can see the statistics of any player using the search by nick (for
+      example, &quot;Swarov5ki&quot;). Or you can search by clan tag (for example, &quot;C4&quot;)
+      <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>
+      You can also log in with your Wargaming account. This will allow you to
+      track your game statistics over time.
+    </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/home.component.html</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="a17b5801b70a80e822b070eda9a977277496428b" datatype="html">
+        <source>Select region:</source>
+        <target>Region auswählen:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/home.component.html</context>
+          <context context-type="linenumber">15</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2d98d38ec8e45c1f7514bb322411a9160606cadd" datatype="html">
+        <source>Europe</source>
+        <target>Europa</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/home.component.html</context>
+          <context context-type="linenumber">17</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="de8c7e7b330f9599c46fa0cda4203e1e7b83bd97" datatype="html">
+        <source>Russia</source>
+        <target>Russland</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/home.component.html</context>
+          <context context-type="linenumber">20</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="43922a096cc45d30cc534191fbd692fff192e3cb" datatype="html">
+        <source>North America</source>
+        <target>North America</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/home.component.html</context>
+          <context context-type="linenumber">23</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2315bbc9d6fd0779c5e253f9d0f8d851ad36e000" datatype="html">
+        <source>Asia</source>
+        <target>Asia</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/home.component.html</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="9f63c49d350551cac8d865fb5eac0b9e03e26327" datatype="html">
+        <source>Login with WargamingId</source>
+        <target>Anmeldung mit WargamingId</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/home.component.html</context>
+          <context context-type="linenumber">32</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="90a0b35fe191a209a40a57eff36d0efc3649fbb1" datatype="html">
+        <source>Search by login</source>
+        <target>Search by login</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/home.component.html</context>
+          <context context-type="linenumber">33</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="9e23b406f7432b0258b59f463642e95a54022944" datatype="html">
+        <source>Search by clan</source>
+        <target>Search by clan</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/home.component.html</context>
+          <context context-type="linenumber">34</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="43d3ad0bc91094023aa6f879517db8f17052f3aa" datatype="html">
+        <source>player works!</source>
+        <target>Spieler Werke!</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/player/player.component.html</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="fb5362b480534420e9753021e65f9e2748be3205" datatype="html">
+        <source>clan works!</source>
+        <target>clan Werke!</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/clan/clan.component.html</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

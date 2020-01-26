@@ -9,6 +9,14 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import { HttpClientModule } from '@angular/common/http';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
 
+import { registerLocaleData } from '@angular/common';
+import localeEn from '@angular/common/locales/en';
+import localeRu from '@angular/common/locales/ru';
+import localeDe from '@angular/common/locales/de';
+registerLocaleData(localeEn);
+registerLocaleData(localeRu);
+registerLocaleData(localeDe);
+
 @NgModule({
   declarations: [
     AppComponent,
